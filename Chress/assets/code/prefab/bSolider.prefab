@@ -18,7 +18,7 @@
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
@@ -110,8 +110,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "label": null,
-    "text": "hello",
     "_id": ""
   },
   {
@@ -120,7 +118,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "da43e2ba-57a5-406f-9458-c18dc1f244fa"
     },
     "fileId": "5e0a5ikElNMaUetWlYG6F/",
     "sync": false

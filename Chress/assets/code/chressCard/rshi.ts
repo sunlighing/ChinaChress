@@ -15,7 +15,7 @@ import Chress from '../lib/CardChress'
 
 
 @ccclass
-export default class rShi extends Chress {
+export default class rshi extends Chress {
 
     private id: number = chressCard.knight;  //士 红 
 

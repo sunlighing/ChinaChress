@@ -15,7 +15,7 @@ import {chressCard} from '../lib/defineGame';
 import Chress from '../lib/CardChress'
 
 @ccclass
-export default class bsolder extends Chress {
+export default class bSolider extends Chress {
 
     private id: number = chressCard.soldier      //卒 黑
 

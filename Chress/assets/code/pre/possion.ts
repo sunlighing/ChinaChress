@@ -42,7 +42,7 @@ export default class NewClass extends cc.Component {
                     //棋子被推入队列
 
                 }else{ //队列里不为空  检查在不在队列里面
-                    if()
+                   
                     if(gm.queque.checkIsOk([this.positionx,this.positiony]) == true){
                             //可以被队列棋子吃了
                         
@@ -51,15 +51,17 @@ export default class NewClass extends cc.Component {
                     }
                 }
             }else{ //这个位置没有棋子
-               
+                
                 if (gm.queque.isNull() == 0){ //队列为空 ，棋盘上没有棋子，是真的不处理
                     cc.log("队列为空不处理")
 
                 }else{ //队列里不为空 
                         
                     if(gm.queque.checkIsOk([this.positionx,this.positiony]) == true){
-                            //在队列棋子路径上，可以队列棋子移动到此路径上 
-                            cc.log("在路径上可以处理")
+                        //在队列棋子路径上，可以队列棋子移动到此路径上 
+                        cc.log("在路径上可以处理")
+                        //这个位置没有棋子 所以开始移动棋子
+                        gm.queque.moveNode([this.positionx,this.positiony])
                     }else{ 
                             //不在路径上，移动个毛
                         cc.log("不在路径上不处理")

@@ -14,7 +14,7 @@ import {chressCard} from '../lib/defineGame';
 import Chress from '../lib/CardChress'
 
 @ccclass
-export default class bhorse extends Chress {
+export default class bHorse extends Chress {
 
     private id: number = chressCard.blackHorse;  //黑 马 
 

@@ -25,13 +25,13 @@ export default class gm extends cc.Component {
     
 
 
-    public static qipanNode: cc.Node[][] = []  //现在棋盘的上的棋子的位置 和棋盘矩阵保持一致
+    public static qipanNode: cc.Node[][] = [];  //现在棋盘的上的棋子的位置 和棋盘矩阵保持一致
     
-    public static queque:quequ = new quequ()   //手里的棋的队列 
+    public static queque:quequ = new quequ();   //手里的棋的队列 
     
-    public static qipanPre: cc.Node[][] = [] //棋盘位置矩阵 方便显示位置
+    public static qipanPre: cc.Node[][] = []; //棋盘位置pre矩阵 方便显示位置
 
-    public static prePool:Array<cc.Prefab> = [] //象棋总共的棋子预制体
+    public static prePool:Array<cc.Prefab> = []; //象棋总共的棋子预制体
     // LIFE-CYCLE CALLBACKS:
 
     public static lightLoad(){ //亮出路径
@@ -45,7 +45,7 @@ export default class gm extends cc.Component {
     }
 
     public static darkLoad(){ //灭灯
-        
+
         let temp = gm.queque.chressloading()
         //[[1,1],[1,1],[1,1]]
         for (let k=0; k<temp.length;k++){
