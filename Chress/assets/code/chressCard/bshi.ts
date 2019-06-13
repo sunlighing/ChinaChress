@@ -12,16 +12,39 @@ const {ccclass, property} = cc._decorator;
 
 import {chressCard} from '../lib/defineGame';
 import Chress from '../lib/CardChress'
+import gm from "../gm"
 
 @ccclass
-export default class bshi extends cc.Component {
+export default class bshi extends Chress {
 
     private id: number = chressCard.Guard   //士 黑
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
-
+    getload():number[][]{
+        let temp = []
+        
+        if(this.positionx == 1 && this.positiony == 4){
+            temp.push([0,5]);
+            temp.push([2,5]);
+            temp.push([0,3]);
+            temp.push([2,3]);
+        }
+        if(this.positionx == 0 && this.positiony == 5){
+            temp.push([1,4])
+        }
+        if(this.positionx == 2 && this.positiony == 5){
+            temp.push([1,4])
+        }
+        if(this.positionx == 0 && this.positiony == 3){
+            temp.push([1,4])
+        }
+        if(this.positionx == 2 && this.positiony == 3){
+            temp.push([1,4])
+        }
+        return temp
+    }
     start () {
 
     }

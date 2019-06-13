@@ -24,13 +24,24 @@ export default class bSolider extends Chress {
     // onLoad () {}
     
     getload():number[][]{
+        
         if (this.positionx <=4){   //前进一格
             return [[this.positionx+1,this.positiony]]
-        }else if (this.positionx <8){ //分情况 j不能出墙
-            
-        }else if(this.positionx ==8){
+        }else {
+            let temp = []
+            if (this.positionx +1 <=9){  //维度
+                temp.push([this.positionx +1,this.positiony])
+            }
+            if (this.positiony -1 >= 0 ){
+                temp.push([this.positionx ,this.positiony -1])
+            }
+            if (this.positiony +1 <= 8 ){
+                temp.push([this.positionx ,this.positiony +1])
+            }
+            return temp
+        } //分情况 j不能出墙
         
-        }
+        
     }
 
     start () {

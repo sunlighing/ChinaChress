@@ -32,6 +32,7 @@ export default class NewClass extends cc.Component {
     onLoad (){ 
         
         this.node.on("click",function(){
+            gm.darkLoad();//点击下，灭灯
             if(gm.qipanNode[this.positionx][this.positiony] != null){ //这个位置有棋子
                 if (gm.queque.isNull() == 0){ //队列为空 亮出路径
 

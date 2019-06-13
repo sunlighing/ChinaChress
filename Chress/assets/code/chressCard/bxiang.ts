@@ -26,6 +26,8 @@ export default class bxiang extends Chress {
     start () {
 
     }
-
+    getload():number[][]{
+        return []
+    }
     // update (dt) {}
 }

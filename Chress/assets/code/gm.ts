@@ -37,21 +37,25 @@ export default class gm extends cc.Component {
     public static lightLoad(){ //亮出路径
         let temp = gm.queque.chressloading()
         //[[1,1],[1,1],[1,1]]
-        for (let k=0; k<temp.length;k++){
+        if (temp.length > 0){
+            for (let k=0; k<temp.length;k++){
             
-            gm.qipanPre[temp[k][0]][temp[k][1]].getChildByName("lo").active=true
+                gm.qipanPre[temp[k][0]][temp[k][1]].getChildByName("lo").active=true
+            }
         }
+       
 
     }
 
     public static darkLoad(){ //灭灯
-
         let temp = gm.queque.chressloading()
+        if (temp.length > 0){
+
         //[[1,1],[1,1],[1,1]]
         for (let k=0; k<temp.length;k++){
             gm.qipanPre[temp[k][0]][temp[k][1]].getChildByName("lo").active=false
         }
-
+        }
     }
 
     onLoad () {

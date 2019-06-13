@@ -22,6 +22,30 @@ export default class rshi extends Chress {
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
+    
+    getload():number[][]{
+        let temp = []
+        
+        if(this.positionx == 8 && this.positiony == 4){
+            temp.push([9,5]);
+            temp.push([7,5]);
+            temp.push([9,3]);
+            temp.push([7,3]);
+        }
+        if(this.positionx == 9 && this.positiony == 5){
+            temp.push([8,4])
+        }
+        if(this.positionx == 7 && this.positiony == 5){
+            temp.push([8,4])
+        }
+        if(this.positionx == 9 && this.positiony == 3){
+            temp.push([8,4])
+        }
+        if(this.positionx == 7 && this.positiony == 3){
+            temp.push([8,4])
+        }
+        return temp
+    }
 
     start () {
 
