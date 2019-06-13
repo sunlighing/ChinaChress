@@ -18,7 +18,7 @@
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 3,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
@@ -85,7 +85,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "a47f5a35-bc1f-497e-b8fa-62be24ae115e"
+      "__uuid__": "c40092ae-fd44-4553-880b-066ea1bdef13"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -110,8 +110,6 @@
       "__id__": 1
     },
     "_enabled": true,
-    "label": null,
-    "text": "hello",
     "_id": ""
   },
   {
@@ -120,7 +118,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "92ed6330-1b4c-4ae7-b89d-fc8b018eb329"
     },
     "fileId": "5e0a5ikElNMaUetWlYG6F/",
     "sync": false

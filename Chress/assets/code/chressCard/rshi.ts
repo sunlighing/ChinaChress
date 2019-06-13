@@ -13,6 +13,7 @@ const {ccclass, property} = cc._decorator;
 import {chressCard} from '../lib/defineGame';
 import Chress from '../lib/CardChress'
 
+import gm from "../gm"
 
 @ccclass
 export default class rshi extends Chress {
@@ -48,7 +49,7 @@ export default class rshi extends Chress {
     }
 
     start () {
-
+        
     }
 
     // update (dt) {}
