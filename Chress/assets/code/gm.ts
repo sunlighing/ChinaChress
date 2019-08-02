@@ -73,7 +73,7 @@ export default class gm extends cc.Component {
         
     }
     static async openMenu(){
-        
+        quequ.pop()
     }
     
 
